@@ -1,0 +1,95 @@
+/~Colore:
+fondo : lightgray
+contenedor : gray
+articulos:#ccc;
+*/
+
+*{
+	margin:0;
+}
+body{
+	background:lightgray;
+	color:white;
+	font-family:Arial;
+	font-size:16px;
+	text-shadow:1px 1px 0 rgba(0,0,0,.3);
+}
+header{
+	border:10px solid black;
+	display:inline-block;
+	padding:20px;
+}
+nav ul{
+	background:rgba(0,0,0,.5);
+	padding:0;
+	font-size:0;
+}
+nav ul li{
+	box-sizing:border-box;
+	display:inline-block;
+	padding:10px;
+	width:25%;
+	font-size:16px;
+	height:50px;
+	vertical-align:top;
+	text-align:center;
+}
+nav ul li:hover{
+	background:rgba(0,0,0,.3);
+}
+nav ul li a{
+	color:white;
+	text-transform:uppercase;
+	
+}
+#contenedor{
+	background:gray;
+	margin:0 auto;
+	max-width:700px;
+
+}
+#banda{
+	background:gray;
+	text-align:center;
+	padding:20px;
+}
+#banda article{
+	background:#ccc;
+	border:1px solid white;
+	display:inline-block;
+	padding:10px;
+	margin:10px;
+	width:150px;
+	color:black;
+
+}
+#banda article:hover img{
+	-webkit-transform:scale(1.1);
+}
+#banda article img{
+	-webkit-transition:.2s;
+}
+.avatar,.aboutme{
+	float:left;
+}
+.avatar{
+	border:5px solid white;
+	margin-left:20px;
+}
+@media screen and (max-width:600px){
+	nav ul li{
+	width:50%;
+	}
+	header{
+	display:block;
+	width:auto;
+	text-align:center;
+	}
+	.avatar,.aboutme{
+	float:none;
+	}
+	.avatar{
+	margin:10px 0;
+	display:inline-block;
+	}
+}
